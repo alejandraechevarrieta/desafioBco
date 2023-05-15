@@ -1,0 +1,12 @@
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\bin\Debug\bco.Model.dll.config
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\bin\Debug\bco.Model.dll
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\bin\Debug\bco.Model.pdb
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\bin\Debug\EntityFramework.dll
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\bin\Debug\EntityFramework.xml
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\obj\Debug\bco.Model.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\obj\Debug\bco.Model.csproj.CoreCompileInputs.cache
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\obj\Debug\bco.Model.csproj.CopyComplete
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\obj\Debug\bco.Model.dll
+C:\Users\marti\OneDrive\Escritorio\origin\bco.Model\obj\Debug\bco.Model.pdb

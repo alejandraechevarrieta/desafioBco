@@ -1,0 +1,5 @@
+C:\Users\marti\OneDrive\Escritorio\origin\Servicios\obj\Debug\net6.0\bco.Servicios.csproj.AssemblyReference.cache
+C:\Users\marti\OneDrive\Escritorio\origin\Servicios\obj\Debug\net6.0\bco.Servicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\OneDrive\Escritorio\origin\Servicios\obj\Debug\net6.0\bco.Servicios.AssemblyInfoInputs.cache
+C:\Users\marti\OneDrive\Escritorio\origin\Servicios\obj\Debug\net6.0\bco.Servicios.AssemblyInfo.cs
+C:\Users\marti\OneDrive\Escritorio\origin\Servicios\obj\Debug\net6.0\bco.Servicios.csproj.CoreCompileInputs.cache

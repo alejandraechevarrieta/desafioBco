@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/estilos2.css">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="contenedor-formulario contenedor">
+        <div class="imagen-formulario">
+        </div>
+        <form class="formulario">
+            <div class="texto-formulario">
+                <h2>Bienvenido</h2>
+                <p>Inicia sesión con tu número de tarjeta</p>
+            </div>
+            <div class="input">
+                <label for="usuario">Usuario</label>
+                <input placeholder="Numero de Tarjeta" type="text" id="tarjeta">
+            </div>
+            <div class="password-olvidada">
+                <a href="#">¿Olvidaste el número?</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#" role="button" class="btn btn-warning" id="ingresar" style="margin-left:3%;" onclick="Verificar()">Ingresar</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+<script>
+    //funcion para ingresar con enter
+    $(document).on('keypress', function (e) {
+        if (e.which == 13) {
+            e.preventDefault();
+            var numeroTarjeta = $("#tarjeta").val();
+            var url = "/Home/Verificar?numeroTarjeta=" + encodeURIComponent(numeroTarjeta);
+            $.ajax({
+                url: url,
+                success: function (data) {
+                    if (data == "True") {
+                        var passwordUrl = '/Home/Password?numeroTarjeta=' + encodeURIComponent(numeroTarjeta);
+                        location.href = passwordUrl;
+                    } else {
+                        alert("Número de tarjeta incorrecto");
+                        Vaciar();
+                    }
+                },
+            });
+        }
+    });
+    function Verificar() {
+        var numeroTarjeta = $("#tarjeta").val();
+        var url = "/Home/Verificar?numeroTarjeta=" + encodeURIComponent(numeroTarjeta);
+        $.ajax({
+            url: url,
+            success: function (data) {
+                if (data == "True") {
+                    var passwordUrl = '/Home/Password?numeroTarjeta=' + encodeURIComponent(numeroTarjeta);
+                    location.href = passwordUrl;
+                } else {
+                    alert("Número de tarjeta incorrecto");
+                    Vaciar();
+                }
+            },
+        });
+    }
+    function Vaciar() {
+        $('#tarjeta').val('').change();
+    }
+</script>
